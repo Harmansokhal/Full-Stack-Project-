@@ -1,0 +1,48 @@
+cost-optimization-analyzer/
+├── README.md
+├── docker-compose.yml
+├── .env.example
+├── /server
+│ ├── package.json
+│ ├── src
+│ │ ├── index.js
+│ │ ├── config.js
+│ │ ├── routes
+│ │ │ ├── auth.js
+│ │ │ ├── ingest.js
+│ │ │ ├── summaries.js
+│ │ ├── controllers
+│ │ │ ├── ingestController.js
+│ │ │ ├── summaryController.js
+│ │ ├── models
+│ │ │ ├── BillingLine.js
+│ │ │ ├── IngestJob.js
+│ │ ├── services
+│ │ │ ├── csvParser.js
+│ │ │ ├── aggregator.js
+│ │ │ ├── recommendations.js
+│ │ ├── utils
+│ │ │ ├── validator.js
+│ │ ├── jobs
+│ │ │ ├── nightly.js
+│ │ └── seed
+│ │ ├── seed.js
+│ └── scripts
+│ └── import-sample.sh
+├── /client
+│ ├── package.json
+│ ├── public
+│ │ └── index.html
+│ └── src
+│ ├── index.js
+│ ├── App.js
+│ ├── api.js
+│ ├── components
+│ │ ├── Dashboard.js
+│ │ ├── Filters.js
+│ │ ├── HotspotsChart.js
+│ │ ├── AnomaliesList.js
+│ │ └── LineItemsTable.js
+│ └── styles.css
+└── /samples
+└── aws_billing_sample.csv
